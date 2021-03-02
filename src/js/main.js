@@ -1,39 +1,20 @@
-$(document).ready(function(){
-    $('.slider').slick({
-        centerMode: true,
-        // centerPadding: '60px',
-        slidesToShow: 3,
-        dots: true,
-        variableWidth: true
-        // responsive: [
-        //     {
-        //         breakpoint: 768,
-        //         settings: {
-        //             arrows: false,
-        //             centerMode: true,
-        //             centerPadding: '40px',
-        //             slidesToShow: 3
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 480,
-        //         settings: {
-        //             arrows: false,
-        //             centerMode: true,
-        //             centerPadding: '40px',
-        //             slidesToShow: 1
-        //         }
-        //     }
-        // ]
-    });
+$(function () {
+    Date.prototype.daysInMonth = function () {
+        return 32 - new Date(this.getFullYear(), this.getMonth(), 32).getDate();
+    };
 
-    // $('.slider').on('swipe', function(event, slick, direction){
-    //     console.log(direction);
-    //     // left
-    //   });
-    console.log($(".slick-active").siblings())
-    $('.slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-        console.log(currentSlide);
-    });
-});
+    function getDate(plusDays) {
+        var today = new Date();
+        var dd = String(today.getDate() + plusDays).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0');
+        var yyyy = today.getFullYear();
+        var currentDaysInMonth = new Date().daysInMonth()
+        if (+dd > currentDaysInMonth) {
+            dd = String(dd - currentDaysInMonth).padStart(2, '0');
+            mm++
+        }
+        return `${dd}.${mm}.${yyyy}`
+    }
+    $(".time").text(getDate(2));
+})
 

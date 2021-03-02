@@ -1,0 +1,228 @@
+.first-section {
+    background-color: transparent;
+    background-image: url("../img/first-mask.png"), url("../img/second-mask.png");
+    background-position: left top, right top;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+
+.main-info {
+    margin-left: -100px;
+    width: 1153px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.main-info__view  {
+    height: 100%;
+    width: 55%;
+    position: relative;
+}
+
+.main-info__sale {
+    width: 129px;
+    height: 141px;
+    position: absolute;
+    top: 20px;
+    right: 67px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $blue;
+    word-wrap: wrap;
+
+    > div {
+        display: block;
+        margin-top: -5px;
+        padding: 0;
+        font-size: 24px;
+        line-height: 29px;
+    }
+}
+
+.main-info__img {
+
+}
+
+.white {
+    transform: translateY(-480px);
+}
+
+.black {
+    width: 600px;
+    margin-left: 50px;
+    margin-top: 80px;
+    position: relative;
+    z-index: 10;
+}
+
+.main-info__btns {
+    position: absolute;
+    bottom: 0px;
+    left: 150px;
+    z-index: 100;
+}
+
+.main-info__btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 0px 10px 10px 10px;
+    border: 1px solid $blue;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.active {
+    border: 1px solid $black;
+    background-image: url("../img/done.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $black;
+}
+
+.main-info__information {
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.main-info__title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    color: $text;
+    margin-bottom: 20px;
+}
+
+.main-info__old-price {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    text-decoration-line: line-through;
+    color: $text;
+    // margin-bottom: 10px;
+}
+
+.main-info__new-price {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    color: $red;
+    margin-bottom: 20px;
+}
+
+.main-info__order {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    width: 250px;
+    height: 60px;
+    border-radius: 0px 30px 30px 30px;
+    background-color: $red;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.main-info__date {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: $text;
+}
+
+.advantages {
+    display: flex;
+    justify-content: space-between;
+    width: 1140px;
+    height: 193px;
+    margin-top: 60px;
+}
+
+.advantage {
+    width: 345px;
+    height: 178px;
+    border-radius: 0 25px 25px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.advantage__1 {
+    background-color: #E2D1F8;
+    .advantage__logo {
+        background-image: url('../img/logo1.png');
+    }
+    .advantage__number {
+        background-image: url('../img/01.png');
+    }
+}
+
+.advantage__2 {
+    background-color: #FFF9EB;
+    .advantage__logo {
+        background-image: url('../img/logo2.png');
+    }
+    .advantage__number {
+        background-image: url('../img/02.png');
+    }
+}
+
+.advantage__3 {
+    background-color: #E7F6F3;
+    .advantage__logo {
+        background-image: url('../img/logo3.png');
+    }
+    .advantage__number {
+        background-image: url('../img/03.png');
+    }
+}
+
+.advantage__logo {
+    width: 70px;
+    height: 70px;
+    background-color: $blue;
+    border-radius: 0px 15px 15px 15px;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.advantage__title {
+    font-weight: bold;
+    font-size: 18px;
+    color: $text;
+    margin-bottom: 20px;
+    width: 198px;
+    text-align: left;
+}
+
+.advantage__text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: $text;
+    width: 198px;
+    text-align: left;
+}
+
+.advantage__number {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 35px;
+} 

@@ -1,10 +1,13 @@
 $(document).ready(function () {
     $('.slider').slick({
         centerMode: true,
-        // centerPadding: '60px',
-        slidesToShow: 3,
+        slidesToShow: 5,
+        slidesToScroll: 1,
         dots: true,
-        variableWidth: true
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        // speed: 500,
         // responsive: [
         //     {
         //         breakpoint: 768,
@@ -27,20 +30,13 @@ $(document).ready(function () {
         // ]
     });
 
-    // $('.slider').on('swipe', function(event, slick, direction){
-    //     console.log(direction);
-    //     // left
-    //   });
-    console.log($(".slick-active").siblings())
-    $('.slider').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-        // console.log(currentSlide);
+    $('.reviews').slick({
+        slidesToShow: 3,
+        dots: true,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
     });
-
-    // $('.reviews').slick({
-    //     slidesToShow: 3,
-    //     dots: true,
-    //     slidesToScroll: 1,
-    //     infinite: true,
-    // });
 
 });

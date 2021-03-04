@@ -1,14 +1,15 @@
 .first-section {
     background-color: transparent;
-    background-image: url("../img/first-mask.png"), url("../img/second-mask.png");
-    background-position: left top, right top;
+    background-image:url("../img/second-mask.png"), url("../img/first-mask.png");
+    background-position: right top, left top;
+    background-size: 27%, 50%;
     background-repeat: no-repeat;
     height: 800px;
 }
 
 .main-info {
     margin-left: -100px;
-    width: 1153px;
+    width: 100%;
     height: 500px;
     display: flex;
     align-items: center;
@@ -25,8 +26,8 @@
     width: 129px;
     height: 141px;
     position: absolute;
-    top: 20px;
-    right: 67px;
+    top: 10px;
+    right: 40px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -48,8 +49,6 @@
 .main-info__img {
     transition: all 1s ease;
     width: 600px;
-    // margin-left: 50px;
-    // margin-top: 80px;
     position: absolute;
     top: 80px;
     left: 40px;
@@ -86,8 +85,6 @@
         transition: all 1s ease;
         opacity: 0;
         visibility: hidden;
-        // width: 28px;
-        // height: 28px;
     }
 }
 
@@ -98,43 +95,10 @@
     }
 }
 
-
-// .main-info__btn::before {
-//     content: " ";
-//     position: absolute;
-//     top: 0px;
-//     left: 0px;
-//     width: 28px;
-//     height: 28px;
-//     background-image: url("../img/done-blue.png");
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     padding: 0;
-//     margin: 0;
-//     box-sizing: border-box;
-//     display: none;
-// }
-
 .btn__black {
     border: 1px solid $black;
     background-color: $black;
 }
-
-// .btn__white::before {
-//     background-image: url("../img/done-blue.png");
-// }
-
-// .active.btn__black::before {
-//     display: block;
-// }
-
-// .active.btn__white::before {
-//     display: block;
-// }
-
-// .btn__black::before {
-//     background-image: url("../img/done.png");
-// }
 
 .main-info__information {
     height: 100%;
@@ -143,6 +107,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    padding-left: 40px;
 }
 
 .main-info__title {
@@ -159,7 +124,6 @@
     line-height: 29px;
     text-decoration-line: line-through;
     color: $text;
-    // margin-bottom: 10px;
 }
 
 .main-info__new-price {
@@ -186,6 +150,10 @@
     text-decoration: none;
 }
 
+.main-info__order.mobile{
+    display: none;
+}
+
 .main-info__date {
     font-weight: normal;
     font-size: 14px;
@@ -196,9 +164,9 @@
 .advantages {
     display: flex;
     justify-content: space-between;
-    width: 1140px;
+    width: 100%;
     height: 193px;
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 .advantage {

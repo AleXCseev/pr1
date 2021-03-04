@@ -32,7 +32,9 @@ const styleFiles = [
 	"./src/css/fonts.scss",
 	"./src/css/footer.scss",
 	"./src/css/first-section.scss",
-	"./src/css/second-section.scss"
+	"./src/css/second-section.scss",
+	"./src/css/sliders.scss",
+	"./src/css/adaptive.scss",
 ];
 //Порядок подключения js файлов
 const scriptFiles = ["./src/js/lib.js", "./src/js/main.js"];

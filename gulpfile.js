@@ -37,7 +37,11 @@ const styleFiles = [
 	"./src/css/adaptive.scss",
 ];
 //Порядок подключения js файлов
-const scriptFiles = ["./src/js/lib.js", "./src/js/main.js"];
+const scriptFiles = [
+	"./src/js/slider.js",
+	"./src/js/lib.js",
+	"./src/js/main.js",
+];
 
 //Таск для обработки стилей
 gulp.task("styles", () => {

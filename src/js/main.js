@@ -3,6 +3,23 @@ $(function () {
         return 32 - new Date(this.getFullYear(), this.getMonth(), 32).getDate();
     };
 
+    if (!String.prototype.padStart) {
+        String.prototype.padStart = function padStart(targetLength, padString) {
+            targetLength = targetLength >> 0; //truncate if number or convert non-number to 0;
+            padString = String((typeof padString !== 'undefined' ? padString : ' '));
+            if (this.length > targetLength) {
+                return String(this);
+            }
+            else {
+                targetLength = targetLength - this.length;
+                if (targetLength > padString.length) {
+                    padString += padString.repeat(targetLength / padString.length); //append to original to ensure we are longer than needed
+                }
+                return padString.slice(0, targetLength) + String(this);
+            }
+        };
+    }
+
     function getDate(plusDays) {
         var today = new Date();
         var dd = String(today.getDate() + plusDays).padStart(2, '0');
@@ -45,10 +62,10 @@ $(function () {
 
 
     $("body").on('click', '[href*="#"]', function (e) {
-        var fixed_offset = 0;
+        var fixedOffset = 0;
         $('html,body')
             .stop()
-            .animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+            .animate({ scrollTop: $(this.hash).offset().top - fixedOffset }, 1000);
         e.preventDefault();
     });
 

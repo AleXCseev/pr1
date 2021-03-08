@@ -1,471 +1,493 @@
 .second-section {
-    padding-bottom: 50px;
+	padding-bottom: 50px;
 }
 
 .description {
-    margin: 0 auto;
-    width: 100%;
-    height: 198px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 50px;
+	margin: 0 auto;
+	width: 100%;
+	height: 198px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 50px;
 }
 
 .description__flag {
-    width: 318px;
-    height: 100%;
+	width: 318px;
+	height: 100%;
 }
 
 .description__text {
-    padding: 10px 0px 10px 83px;
-    height: 100%;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+	padding: 10px 0px 10px 83px;
+	height: 100%;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
 }
 
 .description__title {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
-    color: $text;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+	color: $text;
 }
 
 .description__paragraf {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 22px;
-    color: $text;
-    display: inline-block;
-    height: auto;
-    width: 100%;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 22px;
+	color: $text;
+	display: inline-block;
+	height: auto;
+	width: 100%;
 }
 
-
-
 .narrow-section {
-    margin: 0 auto;
-    width: 991px;
+	margin: 0 auto;
+	width: 991px;
 }
 
 .stock {
-    width: 863px;
-    height: 183px;
-    border-radius: 0px 50px 50px 50px; 
-    background: rgba(86, 83, 229, 0.97) url("../img/bg-stock.png") center no-repeat;  
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    position: relative;
-    margin-top: 100px;
-    margin-bottom: 80px;
-    padding-left: 30px;
+	width: 863px;
+	height: 183px;
+	border-radius: 0px 50px 50px 50px;
+	background: rgba(86, 83, 229, 0.97) url("../img/bg-stock.png") center no-repeat;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	position: relative;
+	margin-top: 100px;
+	margin-bottom: 80px;
+	padding-left: 30px;
 }
 
 .stock-boots {
-    width: 357px;
-    height: 320px;
-    position: absolute;
-    top: -70px;
-    right: -180px;
+	width: 357px;
+	height: 320px;
+	position: absolute;
+	top: -70px;
+	right: -180px;
 }
 
 .stock__main {
-    transform: rotate(-3deg);
+	transform: rotate(-3deg);
 }
 
 .stock__title {
-    font-weight: bold;
-    font-size: 96px;
-    line-height: 117px;
-    color: $yellow;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding: 0;
+	font-weight: bold;
+	font-size: 96px;
+	line-height: 117px;
+	color: $yellow;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	padding: 0;
 }
 
 .stock__text {
-    font-size: 14px;
-    line-height: 20px;
-    color: #fff;
+	font-size: 14px;
+	line-height: 20px;
+	color: #fff;
 }
 
 .card {
-    width: 100%;
-    height: 562px;
-    background-color: $card;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 0px 50px 50px 50px;
-    margin-bottom: 40px;
-    display: flex;
+	width: 100%;
+	height: 562px;
+	background-color: $card;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 0px 50px 50px 50px;
+	margin-bottom: 40px;
+	display: flex;
 }
 
 .card__left {
-    width: 431px;
-    padding: 40px;
+	width: 431px;
+	padding: 40px;
 }
 
 .card__title {
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 44px;
-    color: $text;
-    text-transform: uppercase;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 44px;
+	color: $text;
+	text-transform: uppercase;
 }
 
 .card__old-price {
-    font-size: 24px;
-    text-decoration-line: line-through;
+	font-size: 24px;
+	text-decoration-line: line-through;
 }
 
 .card__new-price {
-    font-weight: bold;
-    font-size: 42px;
-    color: $red;
-    margin-left: 20px;
+	font-weight: bold;
+	font-size: 42px;
+	color: $red;
+	margin-left: 20px;
 }
 
 .card__table {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 20px;
-    color: $text;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    td {
-        min-width: 115px;
-    }
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	color: $text;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	td {
+		min-width: 115px;
+	}
 }
 
 .card__btns {
-    display: flex;
+	display: flex;
 }
 
 .card__btn-block {
-    position: relative;
-    margin-bottom: 30px;
-    margin-right: 10px;
+	position: relative;
+	margin-bottom: 30px;
+	margin-right: 10px;
 }
 
 .card__btn {
-    width: 30px;
-    height: 30px;
-    border-radius: 0 10px 10px 10px;
-    border: 1px solid $blue;
-    color: $blue;
-    cursor: pointer;
-    transition: all 0.5s ease;
+	width: 30px;
+	height: 30px;
+	border-radius: 0 10px 10px 10px;
+	border: 1px solid $blue;
+	color: $blue;
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+
+.card__btn:hover {
+	box-shadow: 0px 0px 10px 5px rgba(86, 83, 229, 0.25);
 }
 
 .card__btn.active {
-    background-color: $blue;
-    color: #fff;
+	background-color: $blue;
+	color: #fff;
 }
 
 .btn__size {
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
-    color: $blue;
-    position: absolute;
-    bottom: -18px;
-    left: -5px; 
-    width: 45px;
-    display: none;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 15px;
+	color: $blue;
+	position: absolute;
+	bottom: -18px;
+	left: -5px;
+	width: 45px;
+	display: none;
 }
 
 .btn__size.active {
-    display: inline;
+	display: inline;
 }
 
 .card__btns-color {
-    display: flex;
-    margin-bottom: 20px;
+	display: flex;
+	margin-bottom: 20px;
 }
 
 .btn__color {
-    width: 30px;
-    height: 30px;
-    border-radius: 0 10px 10px 10px;
-    border: 1px solid $blue;
-    background-color: #fff;
-    margin-right: 10px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    img {
-        transition: all 1s ease;
-        opacity: 0;
-        visibility: hidden;
-    }
+	width: 30px;
+	height: 30px;
+	border-radius: 0 10px 10px 10px;
+	border: 1px solid $blue;
+	background-color: #fff;
+	margin-right: 10px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s ease;
+	img {
+		transition: all 1s ease;
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+.btn__color:hover {
+	box-shadow: 0px 0px 10px 5px $hover;
 }
 
 .btn__color.black {
-    border: none !important;
-    background-color: $black !important;
+	border: none !important;
+	background-color: $black !important;
 }
 
 .btn__color.active {
-    img {
-        opacity: 1;
-        visibility: visible;
-    }
+	img {
+		opacity: 1;
+		visibility: visible;
+	}
 }
 
 .card__sale {
-    width: 252px;
+	width: 252px;
 }
 
 .card__sale-text {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 20px;
-    color: $text;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	color: $text;
 
-    span {
-        color: $blue;
-        font-weight: bold;
-    }
+	span {
+		color: $blue;
+		font-weight: bold;
+	}
 }
 
 .card-right {
-    padding: 40px 40px 30px 0px;
+	padding: 40px 40px 30px 0px;
 }
 
 .card__galary {
-    width: 520px;
+	width: 520px;
 }
 
 .galary__main {
-    width: 100%;
-    height: 268px;
-    position: relative;
-    margin-bottom: 20px;
-    
-    img {
-        position: absolute;
-        top:50%;
-        left:50%;
-        transform:translate(-50%,-50%);
-        width:100%;
-        height:268px;
-        object-fit:cover;
-        border-radius: 0px 20px 20px 20px;
-        cursor: pointer;
-    }
+	width: 100%;
+	height: 268px;
+	position: relative;
+	margin-bottom: 20px;
+
+	img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		height: 268px;
+		object-fit: cover;
+		border-radius: 0px 20px 20px 20px;
+		cursor: pointer;
+		transition: 0.5s ease;
+	}
+	img:hover {
+		box-shadow: 0px 0px 10px 5px $hover;
+	}
 }
 
 .galary__fotos {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    img {
-        width: 96px;
-        height: 74px;
-        border-radius: 0px 15px 15px 15px;
-        object-fit: cover;
-        cursor: pointer;
-    }
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	img {
+		width: 96px;
+		height: 74px;
+		border-radius: 0px 15px 15px 15px;
+		object-fit: cover;
+		cursor: pointer;
+		transition: 0.5s ease;
+	}
+	img:hover {
+		box-shadow: 0px 0px 10px 5px $hover;
+	}
 }
 
 .card__form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .card__form-inputs {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin-bottom: 10px;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-bottom: 10px;
 }
 
 .form__input-name {
-    width: 250px;
-    height: 40px;
-    border: 1px solid $text;
-    border-radius: 0px 15px 15px 15px;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-    color: $text;
-    padding: 0px 20px;
-    font-family: Montserrat;
-    font-style: normal;
+	width: 250px;
+	height: 40px;
+	border: 1px solid $text;
+	border-radius: 0px 15px 15px 15px;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	color: $text;
+	padding: 0px 20px;
+	font-family: Montserrat;
+	font-style: normal;
+}
+
+input {
+	transition: 0.5s ease;
+}
+
+input:hover {
+	box-shadow: 0px 0px 10px 5px $hover;
 }
 
 .form__input-tel {
-    width: 250px;
-    height: 40px;
-    border: 1px solid $red;
-    border-radius: 0px 15px 15px 15px;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-    color: $red;
-    padding: 0px 20px;
-    font-family: Montserrat;
-    font-style: normal;
+	width: 250px;
+	height: 40px;
+	border: 1px solid $red;
+	border-radius: 0px 15px 15px 15px;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	color: $red;
+	padding: 0px 20px;
+	font-family: Montserrat;
+	font-style: normal;
 }
 
 .form__input-submit {
-    width: 250px;
-    height: 60px;
-    color: #fff;
-    background-color: $red;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 22px;
-    border-radius: 0px 30px 30px 30px;
-    cursor: pointer;
-    font-family: Montserrat;
-    font-style: normal;
+	width: 250px;
+	height: 60px;
+	color: #fff;
+	background-color: $red;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+	border-radius: 0px 30px 30px 30px;
+	cursor: pointer;
+	font-family: Montserrat;
+	font-style: normal;
 }
 .btn__video {
-    cursor: pointer;
-    height: 30px;
-    margin-left: 89px;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    span {
-        line-height: 30px;
-        height: 30px;
-        font-weight: normal;
-        font-size: 14px;
-        color: $text;
-    }
+	cursor: pointer;
+	height: 30px;
+	margin-left: 89px;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	span {
+		line-height: 30px;
+		height: 30px;
+		font-weight: normal;
+		font-size: 14px;
+		color: $text;
+	}
 }
 .btn__video-play {
-    width: 30px;
-    height: 30px;
-    border-radius: 0 10px 10px 10px;
-    margin-right: 10px;
-    background: $blue url("../img/play.png") center no-repeat;
-    cursor: pointer;
+	width: 30px;
+	height: 30px;
+	border-radius: 0 10px 10px 10px;
+	margin-right: 10px;
+	background: $blue url("../img/play.png") center no-repeat;
+	cursor: pointer;
 }
 
 .card__2 {
-    .btn__color {
-        background-color: $brown;
-        border: none;
-    }
+	.btn__color {
+		background-color: $brown;
+		border: none;
+	}
 }
 
 .additional {
-    width: 100%;
-    height: 364px;
-    background-color: $card;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 0px 50px 50px 50px;
-    margin-bottom: 40px;
-    display: flex;
+	width: 100%;
+	height: 364px;
+	background-color: $card;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 0px 50px 50px 50px;
+	margin-bottom: 40px;
+	display: flex;
 
-    .card__right {
-        display: flex;
-        
-    }
-    .card__old-price {
-      margin-bottom: 36px;
-    }
+	.card__right {
+		display: flex;
+	}
+	.card__old-price {
+		margin-bottom: 36px;
+	}
 }
 
 .card__paragraf {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 20px;
-    color: $text;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	color: $text;
 }
 
 .card__info {
-    width: 370px;
-    height: 100%;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-end;
+	width: 370px;
+	height: 100%;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-end;
 }
 
 .additional__form {
-    display: flex;
-    width: 100%;
-    height: 160px;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
+	display: flex;
+	width: 100%;
+	height: 160px;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
 }
 
 .review {
-    width: 100%;
-    // height: 170px;
-    // padding-top: 40px;
-    // margin-bottom: 50px;
+	width: 100%;
+	// height: 170px;
+	// padding-top: 40px;
+	// margin-bottom: 50px;
 }
 
 .reviews__title {
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 44px;
-    color: $text;
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: 70px;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 44px;
+	color: $text;
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 70px;
 }
 
 .reviews {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
 }
 
 .message {
-    width: 360px;
-    height: 165px;
-    background-color: $message;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 0px 15px 15px 15px;
-    position: relative;
-    padding: 20px 25px;
-    display: flex !important;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 0 30px;
+	width: 360px;
+	height: 165px;
+	background-color: $message;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 0px 15px 15px 15px;
+	position: relative;
+	padding: 20px 25px;
+	display: flex !important;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 0 30px;
 
-    &:last-child {
-        margin-right: 0px;
-    }
+	&:last-child {
+		margin-right: 0px;
+	}
 }
 
 .message__name {
-    font-weight: bold;
-    font-size: 24px;
-    color: $text;
+	font-weight: bold;
+	font-size: 24px;
+	color: $text;
 }
 
 .message__text {
-    font-weight: normal;
-    font-size: 14px;
-    color: $text;
-    width: 100%;
-    height: auto;
+	font-weight: normal;
+	font-size: 14px;
+	color: $text;
+	width: 100%;
+	height: auto;
 }
 
 .message__icon {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
 }
 
 .card__mobile {
-    display: none;
+	display: none;
 }
 
 .additional-mobile {
-    display: none;
+	display: none;
 }

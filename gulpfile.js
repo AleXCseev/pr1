@@ -1,28 +1,15 @@
-//Подключаем галп
 const gulp = require("gulp");
-//Объединение файлов
 const concat = require("gulp-concat");
-//Добапвление префиксов
 const autoprefixer = require("gulp-autoprefixer");
-//Оптимизация стилей
 const cleanCSS = require("gulp-clean-css");
-//Оптимизация скриптов
 const uglify = require("gulp-uglify");
-//Удаление файлов
 const del = require("del");
-//Синхронизация с браузером
 const browserSync = require("browser-sync").create();
-//Для препроцессоров стилей
 const sourcemaps = require("gulp-sourcemaps");
-//Sass препроцессор
 const sass = require("gulp-sass");
-//Less препроцессор
 const less = require("gulp-less");
-//Stylus препроцессор
 const stylus = require("gulp-stylus");
-//Модуль для сжатия изображений
 const imagemin = require("gulp-imagemin");
-//Модуль переименовывания файлов
 const rename = require("gulp-rename");
 
 //Порядок подключения файлов со стилями
@@ -37,11 +24,7 @@ const styleFiles = [
 	"./src/css/adaptive.scss",
 ];
 //Порядок подключения js файлов
-const scriptFiles = [
-	"./src/js/slider.js",
-	"./src/js/lib.js",
-	"./src/js/main.js",
-];
+const scriptFiles = ["./src/js/slider.js", "./src/js/lib.js", "./src/js/main.js"];
 
 //Таск для обработки стилей
 gulp.task("styles", () => {
@@ -80,12 +63,7 @@ gulp.task("styles", () => {
 });
 
 gulp.task("fonts", () => {
-	return (
-		gulp
-			.src("./src/fonts/**")
-			.pipe(gulp.dest("./build/fonts/"))
-			.pipe(browserSync.stream())
-	);
+	return gulp.src("./src/fonts/**").pipe(gulp.dest("./build/fonts/")).pipe(browserSync.stream());
 });
 
 //Таск для обработки скриптов
@@ -123,13 +101,13 @@ gulp.task("del", () => {
 gulp.task("img-compress", () => {
 	return gulp
 		.src("./src/img/**")
-		// .pipe(
-		// 	imagemin({
-		// 		progressive: true,
-		// 	}),
-		// )
+		.pipe(
+			imagemin({
+				progressive: true,
+			}),
+		)
 		.pipe(gulp.dest("./build/img/"))
-		.pipe(browserSync.stream())
+		.pipe(browserSync.stream());
 });
 
 //Таск для отслеживания изменений в файлах
@@ -139,14 +117,10 @@ gulp.task("watch", () => {
 			baseDir: "./",
 		},
 	});
-	//Следить за добавлением новых изображений
 	gulp.watch("./src/img/**", gulp.series("img-compress"));
 	gulp.watch("./src/fonts/**", gulp.series("fonts"));
-	//Следить за файлами со стилями с нужным расширением
 	gulp.watch("./src/css/**/*.scss", gulp.series("styles"));
-	//Следить за JS файлами
 	gulp.watch("./src/js/**/*.js", gulp.series("scripts"));
-	//При изменении HTML запустить синхронизацию
 	gulp.watch("./*.html").on("change", browserSync.reload);
 });
 

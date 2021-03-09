@@ -128,4 +128,3 @@ $(function () {
     galary(".card__2")
     galary(".card__3")
 })
-

@@ -145,13 +145,9 @@
 		padding: 0;
 
 		button {
-			opacity: 0;
-			height: 0px;
-			width: 0px;
-			font-size: 0px;
-			background-color: transparent;
+			display: none;
 			:before {
-				font-size: 0px;
+				display: none;
 			}
 		}
 	}
@@ -187,7 +183,7 @@
 }
 
 .reviews .slick-track {
-	height: 170px;
+	height: 220px;
 	margin-bottom: 0px;
 }
 

@@ -23,7 +23,10 @@ $(document).ready(function () {
 			{
 				src: $(".slider1__7").attr("data-slide"),
 			},
-		]);
+		], {
+			loop: true,
+		}
+		);
 	});
 
 	$(".carousel__2").click(function () {
@@ -49,6 +52,8 @@ $(document).ready(function () {
 			{
 				src: $(".slider2__7").attr("data-slide"),
 			},
-		]);
+		], {
+			loop: true,
+		});
 	});
 });

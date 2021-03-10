@@ -36,7 +36,7 @@
 @media (max-width: 1200px) {
 	main {
 		// height: 5000px;
-		background-position: 0px 200px, center top;
+		background-position: center;
 	}
 	.first-section {
 		height: 700px;
@@ -132,11 +132,11 @@
 		margin-bottom: 0px;
 	}
 	.form__input-name {
-		width: 80%;
+		width: 250px;
 		margin-bottom: 10px;
 	}
 	.form__input-tel {
-		width: 80%;
+		width: 250px;
 		margin-bottom: 10px;
 	}
 	.additional {
@@ -148,7 +148,7 @@
 	.additional__form {
 		height: 200px;
 		input {
-			width: 100%;
+			width: 250px;
 		}
 	}
 	.message__text {
@@ -349,6 +349,11 @@
 	.advantage {
 		width: 200px;
 		height: 250px;
+		padding: 30px;
+		padding-top: 60px;
+	}
+	.advantage__text {
+		font-size: 13px;
 	}
 	.description {
 		width: 100%;
@@ -357,6 +362,9 @@
 	}
 	.description__flag {
 		width: 45%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 	.description__text {
 		padding-left: 0;
@@ -428,6 +436,38 @@
 		border-radius: 0px 15px 15px 15px;
 		font-size: 24px;
 		flex-basis: 70px;
+	}
+	.additional {
+		height: 660px;
+		flex-direction: column;
+		padding: 30px;
+		
+		.card__right {
+			width: 100%;
+			justify-content: center;
+			padding: 0;
+			margin: 0;
+		}
+		.card__left {
+			width: 100%;
+			padding: 0;
+			margin: 0;
+		}
+		.card__title {
+			text-align: center;
+		}
+		.card__info {
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: baseline;
+			justify-content: space-around;
+		}
+	}
+	.additional__form {
+		// height: 200px;
+		input {
+			width: 100%;
+		}
 	}
 }
 

@@ -4,10 +4,16 @@
 	box-sizing: border-box;
 	border: none;
 	background: none;
+	border-radius: none;
 }
 
 img {
 	user-select: none;
+}
+
+input {
+     -webkit-appearance: none;
+     border-radius: 0;
 }
 
 body {

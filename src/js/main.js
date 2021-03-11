@@ -92,7 +92,7 @@ $(function () {
             $(mainImgSelector)
                 .hide()
                 .attr("src", $(this).attr("src"))
-                .fadeIn(1000);
+                .fadeIn();
             $(fancyBoxSelector).attr("href", $(mainImgSelector).attr("src"))
         })
 
@@ -100,13 +100,13 @@ $(function () {
             $(mainImgSelector)
                 .hide()
                 .attr("src", $(mainImgSelector).attr("data-" + string))
-                .fadeIn(1000)
+                .fadeIn()
             $(fancyBoxSelector).attr("href", $(mainImgSelector).attr("src"))
             $(galaryFototsSelector).each(function () {
                 $(this)
                     .hide()
                     .attr("src", $(this).attr("data-" + string))
-                    .fadeIn(1000)
+                    .fadeIn()
             })
         }
 

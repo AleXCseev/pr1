@@ -298,6 +298,10 @@ function carousel(selector, mark) {
         changeActive(move);
         return false;
     });
+
+    $(window).resize(function () {
+        acarousel.init();
+    });
 }
 
 carousel(".carousel__1", ".move_mark-1")
@@ -340,7 +344,9 @@ $('.slider__2').slick({
     autoplay: true,
     autoplaySpeed: 2000,
     arrows: false,
-    appendDots: ".control-2"
+    appendDots: ".control-2",
+    centerMode: true,
+    variableWidth: true,
 });
 
 $('.reviews').slick({
@@ -348,8 +354,6 @@ $('.reviews').slick({
     dots: true,
     slidesToScroll: 1,
     infinite: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
     appendArrows: ".control-3",
     appendDots: ".control-3",
     responsive: [
@@ -364,7 +368,8 @@ $('.reviews').slick({
             settings: {
                 slidesToShow: 1,
                 arrows: false,
-                variableWidth: true
+                variableWidth: true,
+                centerMode: true,
             }
         },
     ]

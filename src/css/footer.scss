@@ -36,28 +36,28 @@
 	align-items: center;
 }
 
-@keyframes switch {
-	0% {
-		background-color: $blue;
-		color: $white;
-	}
-	25% {
-		background-color: $blue;
-		color: $white;
-	}
-	50% {
-		background-color: $white;
-		color: $blue;
-	}
-	75% {
-		background-color: $white;
-		color: $blue;
-	}
-	100% {
-		background-color: $white;
-		color: $blue;
-	}
-}
+// @keyframes switch {
+// 	0% {
+// 		background-color: $blue;
+// 		color: $white;
+// 	}
+// 	25% {
+// 		background-color: $blue;
+// 		color: $white;
+// 	}
+// 	50% {
+// 		background-color: $white;
+// 		color: $blue;
+// 	}
+// 	75% {
+// 		background-color: $white;
+// 		color: $blue;
+// 	}
+// 	100% {
+// 		background-color: $white;
+// 		color: $blue;
+// 	}
+// }
 
 .stage__number {
 	width: 70px;
@@ -77,24 +77,24 @@
 	transition: all 0.2s ease;
 }
 
-.number__1 {
-	animation: switch 8s infinite;
-}
+// .number__1 {
+// 	animation: switch 8s infinite;
+// }
 
-.number__2 {
-	animation: switch 8s infinite;
-	animation-delay: 2s;
-}
+// .number__2 {
+// 	animation: switch 8s infinite;
+// 	animation-delay: 2s;
+// }
 
-.number__3 {
-	animation: switch 8s infinite;
-	animation-delay: 4s;
-}
+// .number__3 {
+// 	animation: switch 8s infinite;
+// 	animation-delay: 4s;
+// }
 
-.number__4 {
-	animation: switch 8s infinite;
-	animation-delay: 6s;
-}
+// .number__4 {
+// 	animation: switch 8s infinite;
+// 	animation-delay: 6s;
+// }
 
 .delivery__text {
 	font-weight: normal;

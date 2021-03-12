@@ -296,7 +296,7 @@
 		font-size: 30px;
 	}
 	.card__galary {
-		margin-bottom: 50px;
+		margin-bottom: 0px;
 	}
 	.btn__video {
 		margin-left: 30px;
@@ -304,7 +304,8 @@
 	.additional {
 		height: 420px;
 		.card__left {
-			width: 40%;
+			width: 36%;
+			padding-right: 0px;
 		}
 		.card__right {
 			width: 60%;
@@ -319,6 +320,9 @@
 			img {
 				width: 200px;
 			}
+		}
+		.additional__form {
+			height: 160px;
 		}
 	}
 	.message {
@@ -435,9 +439,16 @@
 	.card-right {
 		padding: 30px;
 	}
+	.card__galary {
+		margin-bottom: 10px;
+	}
+	.galary__main {
+		height: 188px;
+	}
 	.galary__fotos {
 		img {
 			width: 50px;
+			height: 42px;
 		}
 	}
 	.btn__video {
@@ -493,6 +504,7 @@
 		}
 	}
 	.additional__form {
+		width: 250px;
 		// height: 200px;
 		input {
 			width: 100%;
@@ -558,9 +570,10 @@
 
 @media (max-width: 740px) {
 	main {
-		background-image: url("../img/back-first.png"), url("../img/bg-mobile.jpg");
-		background-position: center top, 0px 0px;
-		background-size: contain, cover;
+		background-color: #FBF9F5;
+		background-image: url("../img/bg-mobilebottom.png"), url("../img/back-first.png");
+		background-position: 0px 150px, center top;
+		background-size: contain, 120%;
 		height: auto;
 	}
 	.main-info__order {
@@ -692,6 +705,9 @@
 	.card__galary {
 		margin-bottom: 0px;
 	}
+	.galary__main {
+		height: 260px;
+	}
 	.galary__fotos {
 		img {
 			width: 70px;
@@ -766,7 +782,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 100%;
+		width: 250px;
 		height: auto;
 		input {
 			width: 80%;
@@ -910,7 +926,7 @@
 	}
 	.card__title {
 		font-size: 36px;
-		width: 200px;
+		width: 210px;
 		align-self: flex-start;
 	}
 	.card__btns-color {
